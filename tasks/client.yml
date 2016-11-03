@@ -1,0 +1,13 @@
+---
+- name: copy over client config
+  template:
+    src: etc/rsyslog.d/rsyslog.conf
+    dest: /etc/rsyslog.d/rsyslog.conf
+    owner: root
+    group: root
+    mode: 0644
+
+- name: restart service
+  service:
+    name: httpd
+    state: restarted

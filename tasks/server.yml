@@ -1,0 +1,19 @@
+---
+- name: copy over server config
+  template:
+    src: etc/rsyslog.conf
+    dest: /etc/rsyslog.conf
+    owner: root
+    group: root
+    mode: 0644
+
+- name: restart service
+  service:
+    name: httpd
+    state: restarted
+
+- name: open firewall
+  ufw:
+    rule: allow
+    port: 514
+    proto: tcp

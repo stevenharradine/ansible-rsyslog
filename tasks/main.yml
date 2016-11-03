@@ -1,0 +1,6 @@
+---
+- include: install.yml
+- include: server.yml
+  when: rsyslog_isserver|bool
+- include: client.yml
+  when: rsyslog_isclient|bool

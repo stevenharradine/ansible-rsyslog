@@ -1,0 +1,7 @@
+---
+- name: install rsyslog
+  apt:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+    - rsyslog

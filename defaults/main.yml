@@ -1,0 +1,7 @@
+---
+rsyslog_isrelay: no
+rsyslog_isclient: "{{ rsyslog_isrelay }}"
+rsyslog_isserver: "{{ rsyslog_isrelay }}"
+
+rsyslog_remote:
+  - { mask: "*.*", protocol: "@@", host: localhost, port: 514 }
