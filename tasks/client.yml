@@ -6,8 +6,4 @@
     owner: root
     group: root
     mode: 0644
-
-- name: restart service
-  service:
-    name: rsyslog
-    state: restarted
+  notify: Reload Service | rsyslog
