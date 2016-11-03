@@ -6,9 +6,6 @@ Open-source replacement for syslogd, supporting TCP, SSL, TLS, and RELP while in
 
 Tunables
 --------
-* `nginx_port` (integer) - The default unsecure port nginx will listen on
-
-
 * `rsyslog_isrelay` (boolean) - Configure this server as a relay (uses both client and server configurations)
 * `rsyslog_isclient` (boolean) - Configure this server as a client to only send logs
 * `rsyslog_isserver` (boolean) - Configure this server as a server to receive logs
