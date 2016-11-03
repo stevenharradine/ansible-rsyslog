@@ -9,5 +9,5 @@
 
 - name: restart service
   service:
-    name: httpd
+    name: rsyslog
     state: restarted
