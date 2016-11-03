@@ -1,8 +1,8 @@
 ---
 - name: copy over client config
   template:
-    src: etc/rsyslog.d/rsyslog.conf
-    dest: /etc/rsyslog.d/rsyslog.conf
+    src: etc/rsyslog.d/loghost.conf
+    dest: /etc/rsyslog.d/loghost.conf
     owner: root
     group: root
     mode: 0644
